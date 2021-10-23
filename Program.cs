@@ -12,6 +12,7 @@ namespace Day15Binarysearchtree
         {
             //Console.WriteLine("Welcome to Binary Search Tree");
 
+           
             BinarySearchTree<int> binarySearch = new BinarySearchTree<int>(56);
             binarySearch.Insert(30);
             binarySearch.Insert(70);
@@ -26,6 +27,8 @@ namespace Day15Binarysearchtree
             binarySearch.Insert(63);
             binarySearch.Insert(67);
             binarySearch.Display();
+            bool result = binarySearch.IfExists(63, binarySearch);
+            Console.WriteLine(result);
             Console.ReadKey();
         }
     }
